@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Growing Programs</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body id="article">
+    <section id="masthead">
+      <h1>
+        <a href="/" title="Home">Taylor Mitchell</a>
+      </h1>
+    </section>
+    <article>
+      <header>
+        <h1>Growing Programs</h1>
+        <small>2022-03-29</small>
+      </header>
+      <section>
+        <p>
+          This post was inspired by a
+          <a href="https://twitter.com/rsnous/status/1465556099667566600"
+            >tweet</a
+          >
+          from Omar Rizwan:
+        </p>
+        <blockquote>
+          i want to grow a program, like it's a plant that lives down in my
+          browser console, and i take care of it and add to it over days and
+          months and years
+        </blockquote>
+        <p>
+          I love this metaphor and wanted to explore what it might look and feel
+          like to play it out. What follows is a story about Alice, an avid user
+          of a fictional writing app, and her experience growing programs within
+          it.
+        </p>
+      </section>
+      <section>
+        <h2>Fertilizing</h2>
+        <p>
+          Alice's work involves a lot of writing, so much of her day is spent
+          inside her favorite writing app.
+        </p>
+        <p>
+          As she goes about her work, she organically develops workflows which
+          fit the way she thinks and works.
+        </p>
+        <p>
+          For example, she keeps an "Inbox" section at the start of each essay
+          where she puts next steps, new ideas, and misc prose. She also keeps
+          an "Archive" section at the bottom, where she moves sentences and
+          paragraphs that she needs to cut but can't bring herself to delete.
+        </p>
+        <p>
+          This consistent structure in her essays (Inbox and Archive sections)
+          and methods for handling certain types of text (new ideas and cut
+          sentences), relieves some of the pressure of writing . She doesn't
+          need to worry about where to put her nuggets of inspiration or agonize
+          over cutting a sentence forever. She has a consistent system she can
+          use to reliably handle these cases so she can focus her energy on
+          writing.
+        </p>
+        <p>
+          But not only that. Programs thrive in environments with structure, so
+          by adding some structure to her writing, she's also fertilizing the
+          app for programs to grow.
+        </p>
+      </section>
+      <section>
+        <h2>Sowing</h2>
+        <p>
+          As time goes on, some of her workflows become core parts of her work.
+          Especially the archiving workflow, which she uses many times a day.
+          Although she likes having an archive of her cut sentences, she doesn't
+          like how implementing it takes her out of the flow of writing.
+        </p>
+        <p>
+          She would love it if she could just select some text, hit a hotkey,
+          and have it moved down to the archive section automatically. Luckily,
+          the writing app supports end-user scripting, so she decides to try
+          creating one for this workflow.
+        </p>
+        <p>
+          Alice has some experience programming, but never in this environment,
+          so she decides to use the app's
+          <a href="https://en.wikipedia.org/wiki/Macro_recorder"
+            >macro recorder</a
+          >
+          to create the initial script. The result isn't perfect, but it only
+          takes a few modifications in the app's built-in IDE to get it working.
+        </p>
+        <p>
+          With that, the seed of a program is planted! She assigns it to a hot
+          key and gets back to your work.
+        </p>
+        <p>
+          Over the coming weeks, Alice creates many more scripts like this. None
+          of them are very intricate, but they save her time throughout the day
+          and allow her to focus on the writing itself.
+        </p>
+        <p>
+          Most of the scripts die off, while other's take root. This stage feels
+          like sowing seeds. You can't count on any one seed to sprout so you
+          need to plant lots.
+        </p>
+      </section>
+      <section>
+        <h2>Growing</h2>
+        <p>
+          The scripts require a bit of caring for - fixing a bug here, adding
+          some logic there - but this is easy to do. The script's home is inside
+          the app alongside her, so it's always right within reach. When there's
+          an error, she gets a notification, and with one click she's dropped
+          into a debug mode where she can step through and quickly track down
+          the problem. Once fixed, there's no need to compile or deploy, the
+          script is live within the app so changes are reflected immediately.
+        </p>
+        <p>
+          At some point, Alice notices that some of the scripts feel like
+          variations of the same idea. All of them take a piece of text, and
+          then quickly move it to another section or document. The writing app
+          supports creating packages, so she decides to try refactoring these
+          scripts into one.
+        </p>
+        <p>
+          She creates abstractions which span the specific use cases which her
+          scripts implement, and encapsulates them in modules. She also defines
+          the main interface for the package: some default actions like "move to
+          archive", and "move to inbox", as well as an option to search and
+          select any section and document as a destination. Once finished, using 
+          the package is as easy as selecting some text, right clicking, and then
+          selecting an action from the menu.
+        </p>
+        <p>
+          Now, as she uses the package, she feels a shift. It took some time
+          and care for her scripts to grow, but they finally feel like they've
+          bloomed into the program that they were always meant to be.
+        </p>
+      </section>
+      <h2>Repotting</h2>
+      <p>
+        Eventually Alice's scripts and packages begin to settle. More than ever,
+        her writing environment fits the way she thinks and works. But she's
+        still not quite satisfied. It feels like there's more room to grow, but
+        her programs have hit a plateau.
+      </p>
+      <p>
+        There comes a time in every plants life when a change in it's living
+        accommodations is required, and it’s time for a repotting. Alice knew
+        that her programs could be so much more if allowed to grow, but they
+        were hitting the limits imposed by their home inside the writing app.
+        For her programs to continue growing, they'll need a home of their own.
+      </p>
+      <p>
+        She'd sometimes thought about building a writing app herself, but the
+        task had always felt too daunting. But now that her programs had grown
+        this far, a stand-alone application felt within reach.
+      </p>
+      <p>
+        So she exports her programs and places them into a new folder, fires up
+        her code editor, and gets to work building a new home where her writing
+        and programs can continue to grow unconstrained.
+      </p>
+    </article>
+    <footer>
+      <br />
+      <hr />
+      <br />
+    </footer>
+  </body>
+</html>

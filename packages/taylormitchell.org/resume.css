@@ -1,0 +1,90 @@
+/* resume.css */
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.4;
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+}
+
+/* Header styles */
+h1 {
+  font-size: 24pt;
+  margin-bottom: 4pt;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 14pt;
+  border-bottom: 1px solid black;
+  margin-top: 16pt;
+  margin-bottom: 8pt;
+  padding-bottom: 2pt;
+}
+
+/* Contact info section */
+.contact-info {
+  font-size: 12pt;
+  margin-bottom: 16pt;
+}
+
+/* Role headers */
+.role-header {
+  display: table;
+  width: 100%;
+}
+
+.role-header > span {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.role-spacer {
+  width: 100%;
+}
+
+.role-date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.role-title {
+  font-weight: bold;
+}
+
+.role,
+.role-date {
+  flex-grow: 0;
+}
+
+/* List styling */
+ul {
+  margin-top: 4pt;
+  margin-bottom: 8pt;
+  padding-left: 20pt;
+}
+
+li {
+  margin-bottom: 4pt;
+}
+
+/* Link styling */
+a {
+  color: rgb(0, 0, 238);
+  text-decoration: none;
+}
+
+/* Print-specific adjustments */
+@media print {
+  body {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>603693567.10253298</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>~/Downloads/roam_backup/json/second_brain.json</string>
+						<key>Variable</key>
+						<string>path_to_roam_export</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>#!/usr/bin/python3
+import os
+import json
+path = os.environ['KMVAR_path_to_roam_export']
+path = os.path.expanduser(path)
+with open(path) as f:
+    pages = json.load(f)
+titles = [p["title"] for p in pages]
+print("\n".join(titles))</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>titles</string>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>DestinationVariable</key>
+						<string>title</string>
+						<key>MacroActionType</key>
+						<string>PromptWithList</string>
+						<key>PromptUID</key>
+						<string>67766269-55DB-4B3A-AE28-BB0F831FC69A</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Variable</key>
+						<string>titles</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>%Variable%title%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>603690160.27718902</real>
+				<key>ModificationDate</key>
+				<real>620095484.97343695</real>
+				<key>Name</key>
+				<string>Insert Roam page title</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>rm[[</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>5F1782E8-B765-407A-B876-D10C1135861A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>not roam</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Excluded</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.google.Chrome.app.bkimfhhmlpmooeignhelliaaihiplhkp</string>
+					<key>Name</key>
+					<string>Roam</string>
+					<key>NewFile</key>
+					<string>~/Applications/Chrome Apps.localized/Roam.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>25B8AA64-86DE-48FB-ABB8-42410B971C92</string>
+		<key>UID</key>
+		<string>4302C789-AF20-4E70-B274-B651BC83D8E7</string>
+	</dict>
+</array>
+</plist>

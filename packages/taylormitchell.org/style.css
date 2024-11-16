@@ -1,0 +1,22 @@
+body {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "PT Serif", serif;
+  background-color: #fff;
+  padding: 20px;
+}
+#masthead h1 a {
+    color: black;
+}
+h2 {
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+  color: #20b;
+}
+a:hover {
+  text-decoration: underline;
+}

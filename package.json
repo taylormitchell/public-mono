@@ -1,0 +1,6 @@
+{
+  "name": "taylor",
+  "scripts": {
+    "publish-repo": "bash scripts/publish-repo.sh"
+  }
+}

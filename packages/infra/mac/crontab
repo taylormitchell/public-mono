@@ -1,0 +1,2 @@
+0 0 * * * cd ~/Code/home/packages/kindle-highlights && ~/.bun/bin/bun index.ts 2>&1 | ~/Code/home/packages/infra/mac/log.sh "kindle-highlights"
+* * * * * cd ~/Code/home/packages/infra/mac && ./sync.sh 2>&1 | ~/Code/home/packages/infra/mac/log.sh "sync"

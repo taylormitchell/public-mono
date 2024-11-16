@@ -1,0 +1,16 @@
+{
+  "name": "kindle-highlights-extension",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run --watch scripts/build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/chrome": "^0.0.271",
+    "chokidar": "^4.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

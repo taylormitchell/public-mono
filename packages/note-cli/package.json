@@ -1,0 +1,21 @@
+{
+  "name": "note-cli",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "Taylor Mitchell <taylor.j.mitchell@gmail.com>",
+  "scripts": {
+    "deploy": "bun deploy.ts",
+    "cli": "bun cli.ts"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^20.14.15",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "chrono-node": "^1.4.9",
+    "commander": "^12.1.0",
+    "date-fns": "^3.6.0"
+  }
+}
